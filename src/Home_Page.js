@@ -14,7 +14,7 @@ class Home_Page extends Component{
           <nav className="main_header">
             {this.props.gotoSite.map((site,key)=>{return <a className="button_css col-md-3" onClick={()=>{this.changeMenu(site)}}>{site}</a>})}
           </nav>
-          <div>test</div>
+          <div>test.</div>
         </form>
     );
   }
