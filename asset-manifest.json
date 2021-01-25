@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/BLOG/static/css/main.d2a0312c.chunk.css",
-    "main.js": "/BLOG/static/js/main.817a02d9.chunk.js",
-    "main.js.map": "/BLOG/static/js/main.817a02d9.chunk.js.map",
+    "main.css": "/BLOG/static/css/main.8a59f563.chunk.css",
+    "main.js": "/BLOG/static/js/main.a94c028d.chunk.js",
+    "main.js.map": "/BLOG/static/js/main.a94c028d.chunk.js.map",
     "runtime-main.js": "/BLOG/static/js/runtime-main.f918d7b6.js",
     "runtime-main.js.map": "/BLOG/static/js/runtime-main.f918d7b6.js.map",
     "static/js/2.53d9bb80.chunk.js": "/BLOG/static/js/2.53d9bb80.chunk.js",
     "static/js/2.53d9bb80.chunk.js.map": "/BLOG/static/js/2.53d9bb80.chunk.js.map",
     "index.html": "/BLOG/index.html",
-    "static/css/main.d2a0312c.chunk.css.map": "/BLOG/static/css/main.d2a0312c.chunk.css.map",
+    "static/css/main.8a59f563.chunk.css.map": "/BLOG/static/css/main.8a59f563.chunk.css.map",
     "static/js/2.53d9bb80.chunk.js.LICENSE.txt": "/BLOG/static/js/2.53d9bb80.chunk.js.LICENSE.txt",
     "static/media/bootstrap.css": "/BLOG/static/media/glyphicons-halflings-regular.be810be3.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.f918d7b6.js",
     "static/js/2.53d9bb80.chunk.js",
-    "static/css/main.d2a0312c.chunk.css",
-    "static/js/main.817a02d9.chunk.js"
+    "static/css/main.8a59f563.chunk.css",
+    "static/js/main.a94c028d.chunk.js"
   ]
 }
