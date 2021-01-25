@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import './App.css'
 import './bootstrap/css/bootstrap.css'
-import Make_Model from './Make_Model.js';
+import My_Study from './My_Study.js';
 import Train from './Train.js';
-import DataSet from './DataSet.js';
+import Link from './Link.js';
 import Home_Page from './Home_Page.js';
 
 class App extends Component{
   state={
     site: 'Home_Page',
-    gotoSite: ['Home_Page','Make_Model','Train','DataSet'],
+    gotoSite: ['Home_Page','My_Study','Train','Link'],
   };
 
   Home_Page = (text) =>{
@@ -20,6 +20,8 @@ class App extends Component{
 
   render(){
 
+    const htmlTitle = document.querySelector("title"); // <title> 태그 찾기
+    htmlTitle.innerText = this.state.site;
     if(this.state.site=='Home_Page'){
       return(
         <div className="App">
@@ -27,10 +29,10 @@ class App extends Component{
         </div>
       );
     }
-    if(this.state.site=='Make_Model'){
+    if(this.state.site=='My_Study'){
       return (
         <div className="App">
-          <Make_Model Home_Page={this.Home_Page} message='Make_Model' gotoSite={this.state.gotoSite}/>
+          <My_Study Home_Page={this.Home_Page} message='My_Study' gotoSite={this.state.gotoSite}/>
         </div>
       );
     }
@@ -41,10 +43,10 @@ class App extends Component{
         </div>
       );
     }
-    if(this.state.site=='DataSet'){
+    if(this.state.site=='Link'){
       return(
         <div className="App">
-          <DataSet Home_Page={this.Home_Page} message='DataSet' gotoSite={this.state.gotoSite}/>
+          <Link Home_Page={this.Home_Page} message='Link' gotoSite={this.state.gotoSite}/>
         </div>
       );
     }

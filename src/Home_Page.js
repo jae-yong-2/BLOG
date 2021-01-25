@@ -10,12 +10,12 @@ class Home_Page extends Component{
   render(){
 
       return (
-        <form onSubmit={this.send} className="Home_Page">
+        <div className="My_Study">
           <nav className="main_header">
             {this.props.gotoSite.map((site,key)=>{return <a className="button_css col-md-3" onClick={()=>{this.changeMenu(site)}}>{site}</a>})}
           </nav>
-          <div>test.</div>
-        </form>
+          <body class=".background_css">test.</body>
+        </div>
     );
   }
 }
