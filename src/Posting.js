@@ -10,11 +10,9 @@ class Posting extends Component{
   change=(id,bid)=>{
     if(document.getElementById(id).style.display =="block"){
       document.getElementById(id).style.display ="none";
-      document.getElementById(bid).innerText="보기";
     }
     else{
       document.getElementById(id).style.display ="block";
-      document.getElementById(bid).innerText="닫기";
     }
   }
   render(){
@@ -24,23 +22,17 @@ class Posting extends Component{
             {this.props.state.gotoSite.map((site,key)=>{return <a className="button_css col-md-3" onClick={()=>{this.changeMenu(site)}}>{site}</a>})}
           </nav>
 
-          <div className="post_body">
-            리액트 공부
-            <button className="button_box" id="react_button" onClick = {()=>{this.change("study1","react_button")}}>보기</button>
-            <div id="study1" className="post_menu"><React_study/></div>
-          </div>
+          <button className="post_body" id="react_button" onClick = {()=>{this.change("study1","react_button")}}>리액트 공부</button>
+          <div id="study1" className="post_menu"><React_study/></div>
 
-          <div className="post_body">
-            장고 공부
-            <button className="button_box" id="django_button" onClick = {()=>{this.change("study2","django_button")}}>보기</button>
-            <div id="study2" className="post_menu">nothing</div>
-          </div>
+          <button className="post_body" id="django_button" onClick = {()=>{this.change("study2","django_button")}}>장고 공부</button>
+          <div id="study2" className="post_menu">nothing</div>
 
-          <div className="post_body">
-            알고리즘 공부
-            <button className="button_box" id="test" onClick = {()=>{this.change("study3","test")}}>보기</button>
-            <div id="study3" className="post_menu"><Algorithm/></div>
-          </div>
+          <button className="post_body" id="test" onClick = {()=>{this.change("study3","test")}}>알고리즘 공부</button>
+          <div id="study3" className="post_menu"><Algorithm/></div>
+
+          <button className="post_body" id="test" onClick = {()=>{this.change("study4","test")}}>빈 공간</button>
+          <div id="study4" className="post_menu">nothing</div>
 
         </div>
 

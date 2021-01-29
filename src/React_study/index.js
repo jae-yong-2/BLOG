@@ -16,7 +16,7 @@ class App extends Component{
     render(){
       return(
         <div>
-            <li className="list">리액트 시작<button className="button_box" id="button1" onClick = {()=>{this.change("React_study1","button1")}}>보기</button></li>
+            <li className="list">리액트 시작<button className="button_box" id="React_button1" onClick = {()=>{this.change("React_study1","React_button1")}}>보기</button></li>
             <div id="React_study1" className="post_list"><List/></div>
         </div>
       );
