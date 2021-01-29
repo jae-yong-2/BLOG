@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css'
 import './bootstrap/css/bootstrap.css'
 import React_study from './React_study'
+import Algorithm from './algorithm'
 class Posting extends Component{
   changeMenu=(text)=>{
     this.props.Home_Page(text)
@@ -38,7 +39,7 @@ class Posting extends Component{
           <div className="post_body">
             알고리즘 공부
             <button className="button_box" id="test" onClick = {()=>{this.change("study3","test")}}>보기</button>
-            <div id="study3" className="post_menu">nothing</div>
+            <div id="study3" className="post_menu"><Algorithm/></div>
           </div>
 
         </div>

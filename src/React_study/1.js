@@ -12,17 +12,17 @@ class App extends Component{
       return(
         <div className="left">
         <h1>리액트 사용법</h1>
-        <h4>
-        npm install -g create-react-app<br/>
-        create-react-app my-app(원하는 이름으로)<br/><br/>
+        <h4><br/>
+        <div className="code">npm install -g create-react-app<br/><br/>
+        create-react-app my-app</div>(my-app은 원하는 이름으로)<br/><br/>
         위의 두 명령어를 실행하면 리액트 파일이 생성된다. 파일을 생성하면 다음과 구조가 같다.<br/><br/>
         <img src={Img1}/>
         <br/><br/>
         리액트가 잘 작동하는지 확인하기 위해 리액트 폴더에서<br/>
-        npm run start 명령어를 실행해본다.<br/><br/>
+        <div className="code">npm run start</div> 명령어를 실행해본다.<br/><br/>
         <img src={Img2}/><br/><br/>
-        이와 같이 나오면 제대로 설치가 완료된것이다.<br/>
-        이후 src에 들어가서 app.js와 index.js를 제외한 나머지 파일을 지워준다.<br/>
+        이와 같이 나오면 제대로 설치가 완료된것이다.<br/><br/>
+        이후 src에 들어가서 app.js와 index.js를 제외한 나머지 파일을 지워준다.<br/><br/>
         index.js의 파일의 경우는 다음과 같이 만들어 주고<br/><br/>
         <img src={Img3}/><br/><br/>
         app.js의 파일의 경우는 다음과 같이 만들어 준다.<br/><br/>
