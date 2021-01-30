@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
-import List from './1.js'
+import List1 from './1.js'
+import List2 from './2.js'
 
 class App extends Component{
   change=(id,bid)=>{
@@ -16,8 +17,13 @@ class App extends Component{
     render(){
       return(
         <div>
+
             <li className="list">백준 no.4344<button className="button_box" id="Algorithm_button1" onClick = {()=>{this.change("beackjoon1","Algorithm_button1")}}>보기</button></li>
-            <div id="beackjoon1" className="post_list"><List/></div>
+            <div id="beackjoon1" className="post_list"><List1/></div>
+
+            <li className="list">백준 no.11650<button className="button_box" id="Algorithm_button2" onClick = {()=>{this.change("beackjoon2","Algorithm_button2")}}>보기</button></li>
+            <div id="beackjoon2" className="post_list"><List2/></div>
+
         </div>
       );
     }
