@@ -6,7 +6,7 @@ class App extends Component{
   render(){
     return(
       <div className="left">
-      <h1>평균은 넘겠지</h1>
+      <h1>평균은 넘겠지<h3>(정답률 : 37.470%)</h3></h1>
       <h4>
       백준 4344번 문제로 평균을 넘는 학생의 수를 구하는 것이다.<br/><br/>
       이 문제는 배열로 간단히 풀 수 있지만 C++에서 사용하는 vector기능을 이용하여 풀어 보았다.<br/><br/>
