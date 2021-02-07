@@ -4,9 +4,6 @@ import './bootstrap/css/bootstrap.css'
 import React_study from './React_study'
 import Algorithm from './algorithm'
 class Posting extends Component{
-  changeMenu=(text)=>{
-    this.props.Home_Page(text)
-  }
   change=(id,bid)=>{
     if(document.getElementById(id).style.display =="block"){
       document.getElementById(id).style.display ="none";
@@ -18,9 +15,6 @@ class Posting extends Component{
   render(){
       return (
         <div className="Posting">
-          <nav className="main_header">
-            {this.props.state.gotoSite.map((site,key)=>{return <a className="button_css col-md-3" onClick={()=>{this.changeMenu(site)}}>{site}</a>})}
-          </nav>
 
           <button className="post_body" id="react_button" onClick = {()=>{this.change("study1","react_button")}}>리액트 공부</button>
           <div id="study1" className="post_menu"><React_study/></div>

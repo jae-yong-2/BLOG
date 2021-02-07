@@ -3,12 +3,6 @@ import './App.css'
 import './bootstrap/css/bootstrap.css'
 
 class Home_Page extends Component{
-  state={
-    page:"",
-  }
-  changeMenu=(text)=>{
-    this.props.Home_Page(text)
-  }
   add_post=(title,text)=>{                    //중복인지를 확인해주고 app의 백엔드에 넣어줌
     if(this.props.state.title.indexOf(title)>=0){
       alert("중복된 제목이 있습니다.")
@@ -20,10 +14,6 @@ class Home_Page extends Component{
 
       return (
         <div className="Home_Page">
-
-          <nav className="main_header">
-            {this.props.state.gotoSite.map((site,key)=>{return <a className="button_css col-md-3" onClick={()=>{this.changeMenu(site)}}>{site}</a>})}
-          </nav>
           <p className="body">
             저를 소개합니다.
             <br/>저는 충남대학교 컴퓨터공학과 이재용입니다.
