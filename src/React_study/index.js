@@ -3,6 +3,7 @@ import '../App.css'
 import List1 from './1.js'
 import List2 from './2.js'
 import List3 from './3.js'
+import List4 from './4.js'
 
 class App extends Component{
   change=(id,bid)=>{
@@ -26,6 +27,9 @@ class App extends Component{
 
             <li className="list">블로그 만들기 1<button className="button_box" id="React_button3" onClick = {()=>{this.change("React_study3","React_button3")}}>보기</button></li>
             <div id="React_study3" className="post_list"><List3/></div>
+
+            <li className="list">블로그 만들기 2<button className="button_box" id="React_button4" onClick = {()=>{this.change("React_study4","React_button4")}}>보기</button></li>
+            <div id="React_study4" className="post_list"><List4/></div>
         </div>
       );
     }
