@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import '../App.js'
 import Img1 from './img/study1_1.PNG'
+import Img2 from './img/study1_2.PNG'
+import Img3 from './img/study1_3.PNG'
 
 class App extends Component{
   render(){
@@ -18,15 +20,18 @@ class App extends Component{
       이를 수행하기 위해서는 기본적으로 리액트의 state를 이해해야 수행할 수 있다.<br/><br/>
       <h3>state란?</h3>
       state는 컴포넌트의 특성 상태를 화면에 동적으로 반영해주는 기능을 위한 객체이다. 컴포넌트가 독립적으로 갖는 상태인것인다.<br/><br/>
-      사용 예시는 다음과 같다.
-      //이미지
-      이렇게 사용된 state는 함수를 통해 변경을 할 수 있는데, 변화되는 즉각 반응하여 웹사이트에 보여진다.<br/><br/>
+      사용 예시는 다음과 같다.<br/><br/>
+      <img src={Img2} className="code"/><br/><br/>
+      이렇게 사용된 state는 setState함수를 통해 변경을 할 수 있는데, 변화되는 즉각 반응하여 웹사이트에 보여진다.<br/><br/>
       이를 사용하여 메뉴를 클릭하면 클릭에 따라 각각에 맞는 state를 변화시켜 그 컴포넌트를 보여주는 작업을 하게 된다.<br/><br/>
       이렇게 메뉴창을 클릭할 때 마다 그에 맞는 컴포넌트를 보여주도록 하면 되는데 state에 이동할 메뉴의 리스트와 현재 메뉴상태를 나타내는 정보를 준다.<br/><br/>
       이후 map함수와 onClick을 통해서 메뉴를 바꿔주는 함수를 실행하고 클릭마다 상태를 변환해준다.<br/><br/>
-      코드는 다음과 같다.<br/><br/>
-      //이미지<br/><br/>
+      위의 이미지가 첫번째 버튼은 버튼을 클릭하기전이고, 두번째 버튼이 버튼을 클릭한 후이다.<br/><br/>
+      구현된 메뉴창은 다음과 같고 map함수를 통해 상태에서 페이지 이름을 setState에 보내주어 클릭마다 상태를 변경해준다.<br/><br/>
+      render아래 두줄은 다음 포스팅때 설명하겠다.<br/><br/>
+      <img src={Img3} className="code"/><br/><br/>
       이렇게 구현된 페이지는 현재 보고있는 블로그의 메뉴처럼 작동하게 된다.<br/><br/>
+      이상 포스팅 끝
       </h4>
       </div>
     );
