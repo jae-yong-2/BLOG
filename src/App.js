@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './App.css'
 import './bootstrap/css/bootstrap.css'
-import My_Study from './My_Study.js';
-import Posting from './Posting.js';
-import Link from './Link.js';
-import Home_Page from './Home_Page.js';
+import My_Study from './My_Study';
+import Posting from './Posting';
+import Link from './Link';
+import Home_Page from './Home_Page';
 
 class App extends Component{
   state={

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css'
 import './bootstrap/css/bootstrap.css'
 import React_study from './React_study'
-import Algorithm from './algorithm'
+import Algorithm from './algorithm/index'
 class Posting extends Component{
   change=(id,bid)=>{
     if(document.getElementById(id).style.display =="block"){
