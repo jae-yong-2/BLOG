@@ -10,8 +10,8 @@ class App extends Component{
   state={
     site: 'Home_Page',
     gotoSite: ['Home_Page','Posting','My_Study','Link'],
-    title:[],
-    text:[],
+    title:["App.js데이터입니다."],
+    text:["props를 이용하여 값을 보냅니다."],
     img:[],
   };
   add_post = (title,text)=>{                      //상태를 변경함 백엔드 연동시 거기에 정보를 넣어야함
@@ -21,7 +21,6 @@ class App extends Component{
         text: this.state.text.concat(text)
       }
     );
-    console.log(text);
   }
   remove_post=(key)=>{                        //등록정보를 지울수있음
     var index=this.state.title.indexOf(key)
@@ -48,7 +47,7 @@ class App extends Component{
           <nav className="main_header">
           {this.menu}
           </nav>
-          <Home_Page/>
+          <Home_Page add_post={this.add_post} state={this.state}/>
         </div>
       );
     }
@@ -68,13 +67,13 @@ class App extends Component{
           <nav className="main_header">
           {this.menu}
           </nav>
-          <My_Study remove_post={this.remove_post}state={this.state}/>
+          <My_Study remove_post={this.remove_post} state={this.state}/>
         </div>
       );
     }
     if(this.state.site=='Link'){
       return(
-        <div id='Link'className="App">
+        <div className="App">
           <nav className="main_header">
           {this.menu}
           </nav>
