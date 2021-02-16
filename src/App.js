@@ -39,8 +39,7 @@ class App extends Component{
   render(){
     const htmlTitle = document.querySelector("title"); // <title> 태그 찾기
     htmlTitle.innerText = this.state.site;
-
-
+    
     if(this.state.site=='Home_Page'){
       return(
         <div className="App">

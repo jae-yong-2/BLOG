@@ -1,9 +1,10 @@
-import List1 from './1.js'
-import List2 from './2.js'
-import List3 from './3.js'
-import List4 from './4.js'
-import List5 from './5.js'
-import List6 from './6.js'
+import List1 from './Posting1'
+import List2 from './Posting2'
+import List3 from './Posting3'
+import List4 from './Posting4'
+import List5 from './Posting5'
+import List6 from './Posting6'
+
 
 export const List = [
   {title : '백준 no.4344', content : <List1/>},

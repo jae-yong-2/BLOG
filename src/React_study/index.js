@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import '../App.css'
-import List1 from './1.js'
-import List2 from './2.js'
-import List3 from './3.js'
-import List4 from './4.js'
+import List1 from './Posting1'
+import List2 from './Posting2'
+import List3 from './Posting3'
+import List4 from './Posting4'
+import List5 from './Posting5'
+import List6 from './Posting6'
 
 class App extends Component{
   change=(id,bid)=>{
@@ -30,6 +32,12 @@ class App extends Component{
 
             <li className="list">블로그 만들기 2<button className="button_box" id="React_button4" onClick = {()=>{this.change("React_study4","React_button4")}}>보기</button></li>
             <div id="React_study4" className="post_list"><List4/></div>
+
+            <li className="list">블로그 만들기 3<button className="button_box" id="React_button5" onClick = {()=>{this.change("React_study5","React_button5")}}>보기</button></li>
+            <div id="React_study5" className="post_list"><List5/></div>
+
+            <li className="list">블로그 만들기 4<button className="button_box" id="React_button6" onClick = {()=>{this.change("React_study6","React_button6")}}>보기</button></li>
+            <div id="React_study6" className="post_list"><List6/></div>
         </div>
       );
     }

@@ -6,7 +6,7 @@ import Img3 from './img/study2_3.PNG'
 import Img4 from './img/study2_4.PNG'
 import Img5 from './img/study2_5.PNG'
 
-class App extends Component{
+class Posting4 extends Component{
   render(){
     return(
       <div className="left">
@@ -48,4 +48,4 @@ class App extends Component{
   }
 }
 
-export default App;
+export default Posting4;

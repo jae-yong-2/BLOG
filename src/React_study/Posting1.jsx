@@ -7,7 +7,7 @@ import Img4 from './img/react_start3.PNG'
 import Img5 from './img/react_start4.PNG'
 import Img6 from './img/react_start5.PNG'
 
-class App extends Component{
+class Posting1 extends Component{
     render(){
       return(
         <div className="left">
@@ -34,4 +34,4 @@ class App extends Component{
       );
     }
 }
-export default App;
+export default Posting1;

@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import Img1 from './img/react_start2.PNG'
 import Img2 from './img/react_start3.PNG'
-class App extends Component{
+class Posting2 extends Component{
   render(){
     return(
       <div className="left">
@@ -21,4 +21,4 @@ class App extends Component{
   }
 }
 
-export default App;
+export default Posting2;
