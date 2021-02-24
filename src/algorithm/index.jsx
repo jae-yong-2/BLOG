@@ -20,11 +20,11 @@ class App extends Component{
               <div>
                 <li className="list">
                   {i.title}
-                  <button className="button_box" id={i.title} onClick = {()=>{this.change(idx, i.title)}}>
+                  <button className="button_box" id={i.title} onClick = {()=>{this.change(`algorithm${idx}`, i.title)}}>
                     보기
                   </button>
                 </li>
-                <div id={idx} className="post_list">{i.content}</div>
+                <div id={`algorithm${idx}`} className="post_list">{i.content}</div>
               </div>
             )})}
         </div>
