@@ -9,19 +9,21 @@ import List8 from './Posting8'
 import List9 from './Posting9'
 import List10 from './Posting10'
 import List11 from './Posting11'
+import List12 from './Posting12'
 
 
 export const List = [
-  {title : '백준 no.4344', content : <List1/>},
-  {title : '백준 no.11650', content : <List2/>},
-  {title : '백준 no.1018', content : <List3/>},
-  {title : '백준 no.1010', content : <List4/>},
-  {title : '백준 no.1051', content : <List5/>},
-  {title : '백준 no.1037', content : <List6/>},
-  {title : '백준 no.18258', content : <List7/>},
-  {title : '백준 no.11729', content : <List8/>},
-  {title : '백준 no.11047, no.1929', content : <List9/>},
-  {title : '백준 no.1225', content : <List10/>},
-  {title : '백준 no.1072', content : <List11/>},
+  {title : '백준 no.4344 (vector사용법, accumulate사용법)', content : <List1/>},
+  {title : '백준 no.11650 (pair사용법, sort사용법)', content : <List2/>},
+  {title : '백준 no.1018 (필터링 사용하기)', content : <List3/>},
+  {title : '백준 no.1010 (수학문제, 순열빠르게풀기)', content : <List4/>},
+  {title : '백준 no.1051 (필터링 사용하기)', content : <List5/>},
+  {title : '백준 no.1037 (수학문제)', content : <List6/>},
+  {title : '백준 no.18258 (큐 라이브러리)', content : <List7/>},
+  {title : '백준 no.11729 (하노이탑, 재귀)', content : <List8/>},
+  {title : '백준 no.11047, no.1929 (간단 알고리즘, 에라토스테네스의 체)', content : <List9/>},
+  {title : '백준 no.1225 (bigInt, 아스키코드)', content : <List10/>},
+  {title : '백준 no.1072 (이분탐색)' , content : <List11/>},
+  {title : '백준 no.1260 (DFS, BFS)', content : <List12/>},
 
 ];

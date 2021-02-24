@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import '../App.css'
 import Img1 from './img/1225.PNG'
 import Img2 from './img/1225_1.PNG'
-class Posting9 extends Component{
+class Posting10 extends Component{
   render(){
     return(
       <div className="left">
@@ -28,4 +28,4 @@ class Posting9 extends Component{
   }
 }
 
-export default Posting9;
+export default Posting10;
