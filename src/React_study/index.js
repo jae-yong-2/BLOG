@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
 import '../App.css'
-import List1 from './Posting1'
-import List2 from './Posting2'
-import List3 from './Posting3'
-import List4 from './Posting4'
-import List5 from './Posting5'
-import List6 from './Posting6'
-import List7 from './Posting7'
-
 import { List } from './listOfContents';
 
 
