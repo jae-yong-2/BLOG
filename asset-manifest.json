@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BLOG/static/css/main.54407243.chunk.css",
-    "main.js": "/BLOG/static/js/main.e4e5be7b.chunk.js",
-    "main.js.map": "/BLOG/static/js/main.e4e5be7b.chunk.js.map",
+    "main.js": "/BLOG/static/js/main.b9b5bdc3.chunk.js",
+    "main.js.map": "/BLOG/static/js/main.b9b5bdc3.chunk.js.map",
     "runtime-main.js": "/BLOG/static/js/runtime-main.f918d7b6.js",
     "runtime-main.js.map": "/BLOG/static/js/runtime-main.f918d7b6.js.map",
     "static/js/2.9f00c7c9.chunk.js": "/BLOG/static/js/2.9f00c7c9.chunk.js",
@@ -43,6 +43,7 @@
     "static/media/1_6.12ec8226.PNG": "/BLOG/static/media/1_6.12ec8226.PNG",
     "static/media/1_7.e50e1712.PNG": "/BLOG/static/media/1_7.e50e1712.PNG",
     "static/media/1_8.0d9337ea.PNG": "/BLOG/static/media/1_8.0d9337ea.PNG",
+    "static/media/1_9.50d60e0d.PNG": "/BLOG/static/media/1_9.50d60e0d.PNG",
     "static/media/4344.dadf33d5.PNG": "/BLOG/static/media/4344.dadf33d5.PNG",
     "static/media/bootstrap.css": "/BLOG/static/media/glyphicons-halflings-regular.be810be3.woff2",
     "static/media/react_start.e3869c55.PNG": "/BLOG/static/media/react_start.e3869c55.PNG",
@@ -76,6 +77,6 @@
     "static/js/runtime-main.f918d7b6.js",
     "static/js/2.9f00c7c9.chunk.js",
     "static/css/main.54407243.chunk.css",
-    "static/js/main.e4e5be7b.chunk.js"
+    "static/js/main.b9b5bdc3.chunk.js"
   ]
 }
