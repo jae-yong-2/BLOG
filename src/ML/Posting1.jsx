@@ -9,6 +9,8 @@ import Img6 from './img/1_6.PNG'
 import Img7 from './img/1_7.PNG'
 import Img8 from './img/1_8.PNG'
 import Img9 from './img/1_9.PNG'
+import Img10 from './img/1_10.PNG'
+import Img11 from './img/1_11.PNG'
 class Posting1 extends Component{
     render(){
       return(
@@ -40,8 +42,11 @@ class Posting1 extends Component{
         이런 경우를 방지하기 위한 해결법은 normalization을 사용하는 방법이다. 간단하게 말하면 모든 항목에 대한 평균을 0 표준편차를 1로 정규화를 시켜 모든 항목의 중요도를 같게 만드는 것과 같다.<br/><br/>
         <img src={Img4}className="code"/><br/><br/>
         <a href="http://hleecaster.com/ml-normalization-concept/">사진출처</a><br/><br/>
-        위 그림은 정규화하기 전과 정규화를 한 후의 사진이다. 이렇게 눈으로도 보기 쉽고 실제 kNN을 사용할 때, 이런 정규화를 통해 더 높은 R^2를 가져올 수 있다.<br/><br/>
-        R^2는
+        위 그림은 정규화하기 전과 정규화를 한 후의 사진이다.
+        정규화 말고도 각 거리마다 가중치를 줘서 계산해 주는 방법도 있다. 이 방법은 k=5일 경우 파란색이 2개 빨간색이 3개로 빨간색이 되어야하는 경우라고 보자.<br/><br/>
+        근데 만약 파란색의 경우 거리가 1이고 빨간색의 경우 거리가 100이면 과연 빨간색이라고 분류할 수 있을까? 이를 방지 하기위해 가중치를 주어 계산하는 방법도 있다.<br/><br/>
+        <h3>R^2</h3>
+        R^2란
         <div className="code">(타깃-예측)^2의 합<br/>ㅡㅡㅡㅡㅡㅡㅡㅡㅡ<br/>(타깃-평균)^2의 합</div><br/><br/>이며 이는 모델이 얼마나 잘 학습되었느냐를 확인해주는 지표이다. 이 값이 1에 까울 수록 더 좋은 모델이라고 볼 수있다.
         하지만 무조건 1에 가깝다고 좋은 것은 아니다. 만약 train의 R^2이 test보다 낮으면 잘 학습이 되지 못했다고 볼 수 있다.<br/><br/> 이제 실제 실습을 통해서 kNN을 사용해보자.
         우선 사용된 패키지는 다음과 같다.<br/><br/>
@@ -61,6 +66,9 @@ class Posting1 extends Component{
         <img src={Img9}className="code"/><br/><br/>
         아래처럼 나온다. 아래 그래프에서는 k가 1~5일때가 상당히 높은 정확도를 보이고, 그 뒤는 R^2를 고려했을 때 높더라도 그렇게 잘 학습됐다고 판단은 되지않는다.<br/><br/>
         그럼 R^2과 예측 정확도를 고려해 볼때, 실제로 사용을 해야한다면 k를 3~4정도로 두고 사용할 것을 추천할 것 같다.<br/><br/>
+        아래는 정규화를 했을때이다. 확실히 많이 개선된 모습을 보이니 참고하자<br/><br/>
+        <img src={Img10}className="code"/><br/><br/>
+        <img src={Img11}className="code"/><br/><br/>
         이상 포스팅 끝<br/><br/>
         </h4>
         </div>
