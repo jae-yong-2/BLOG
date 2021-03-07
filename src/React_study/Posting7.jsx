@@ -11,7 +11,7 @@ class Posting1 extends Component{
     render(){
       return(
         <div className="left">
-        <h1>블로그 만들기4</h1>
+        <h1>묘듈화해보기</h1>
         <h4>
         이번 포스팅에서는 메뉴창이 여러개 늘어났을 때 코드가 쓸대없이 많이 늘어나는 것을 방지하기 위해서 모듈화를 해볼것이다.<br/><br/>
         우선 이 블로그 기본구조가 모든 창은 컴포넌트로 각각의 jsx파일을 갖고있기 때문에 모든 jsx파일을 불러올때 한번에 묶어서 불러올수 있도록 다음과 같이 listOfContents.jsx파일을 생성해 준다.<br/><br/>

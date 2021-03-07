@@ -7,8 +7,7 @@ class Posting6 extends Component{
   render(){
     return(
       <div className="left">
-      <h1>블로그 만들기3</h1>
-      <h3>My_Study 페이지 만들기</h3>
+      <h1>My_Study 페이지 만들기</h1>
       <h4>
       이번에는 저번 시간에 이어서 My_Study페이지를 생성해본다. 이전에 props로 My_Study에 state를 전달했었다.<br/><br/>
       이 데이터를 활용해보기 위해 게시판처럼 만들었고 return 하는 코드는 다음과 같다.<br/><br/>

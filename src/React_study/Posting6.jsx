@@ -7,8 +7,7 @@ class Posting6 extends Component{
   render(){
     return(
       <div className="left">
-      <h1>블로그 만들기3</h1>
-      <h3>Posting 페이지 만들기</h3>
+      <h1>Posting 페이지 만들기</h1>
       <h4>
       이번에는 Posting페이지를 만들어본다. posting 페이지는 이전에 홈페이지와 My_Study페이지를 만들때 사용했던 코드들을 활용하여 쉽게 만들었다.<br/><br/>
       <img src={Img1} className="code"/><br/><br/>
