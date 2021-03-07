@@ -11,6 +11,7 @@ import List10 from './Posting10'
 import List11 from './Posting11'
 import List12 from './Posting12'
 import List13 from './Posting13'
+import List14 from './Posting14'
 
 
 export const List = [
@@ -27,4 +28,6 @@ export const List = [
   {title : '백준 no.1072 (이분탐색)' , content : <List11/>},
   {title : '백준 no.1260 (DFS, BFS)', content : <List12/>},
   {title : '백준 no.1325 (DFS)', content : <List13/>},
+  {title : '백준 no.1991 (Tree)', content : <List14/>},
+
 ];
