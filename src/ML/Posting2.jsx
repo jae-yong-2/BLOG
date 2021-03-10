@@ -6,6 +6,7 @@ import Img8 from './img/1_8.PNG'
 import Img9 from './img/1_9.PNG'
 import Img10 from './img/1_10.PNG'
 import Img11 from './img/1_11.PNG'
+
 class Posting2 extends Component{
   render(){
     return(
