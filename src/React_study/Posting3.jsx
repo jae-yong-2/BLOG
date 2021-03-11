@@ -3,6 +3,8 @@ import '../App.js'
 import Img1 from './img/study1_1.PNG'
 import Img2 from './img/study1_2.PNG'
 import Img3 from './img/study1_3.PNG'
+import Img4 from './img/study1_4.PNG'
+import Img5 from './img/study1_5.PNG'
 
 class Posting3 extends Component{
   render(){
@@ -28,9 +30,13 @@ class Posting3 extends Component{
       이후 map함수와 onClick을 통해서 메뉴를 바꿔주는 함수를 실행하고 클릭마다 상태를 변환해준다.<br/><br/>
       위의 이미지가 첫번째 버튼은 버튼을 클릭하기전이고, 두번째 버튼이 버튼을 클릭한 후이다.<br/><br/>
       구현된 메뉴창은 다음과 같고 map함수를 통해 상태에서 페이지 이름을 setState에 보내주어 클릭마다 상태를 변경해준다.<br/><br/>
+      상태는 아래와 같다<br/><br/>
+      <img src={Img4} className="code"/><br/><br/>
       render아래 두줄은 다음 포스팅때 설명하겠다.<br/><br/>
       <img src={Img3} className="code"/><br/><br/>
       이렇게 구현된 페이지는 현재 보고있는 블로그의 메뉴처럼 작동하게 된다.<br/><br/>
+      메뉴는 각 jsx파일로 컴포넌트를 불러와 렌더링하게 된다. 아래처럼 파일을 생성해 준다.<br/><br/>
+      <img src={Img5} className="code"/><br/><br/>
       이상 포스팅 끝
       </h4>
       </div>
