@@ -5,6 +5,13 @@ import Img3 from './img/4-3.PNG'
 import Img4 from './img/4-4.PNG'
 import Img5 from './img/4-5.PNG'
 import Img6 from './img/4-6.PNG'
+import Img7 from './img/4-7.PNG'
+import Img8 from './img/4-8.PNG'
+import Img9 from './img/4-9.PNG'
+import Img10 from './img/4-10.PNG'
+import Img11 from './img/4-11.PNG'
+import Img12 from './img/4-12.PNG'
+
 class Posting3 extends Component{
   render(){
     return(
@@ -32,6 +39,29 @@ class Posting3 extends Component{
       데이터는 유방암 발병과 관련된 데이터이며, 실제로 DT의 경우 그렇게 성능이 좋은 편은 아니지만, 여기서는 좋게나온 이유를 데이터를 보면 알 수 있다.<br/><br/>
       기본적으로 데이터가 한눈에 봐도 분류하기 좋게 나와있으며, 이것은 중요도가 가장높은 3가지를 추출한 것이고, 다른 추가적인 데이터가 주어지면 더 정확해 질수 밖에 없다.<br/><br/>
       다음으로는 트리의 여러가지 조건을 부여하여 분석해 보겠다.<br/><br/>
+      <h3>ccp_alpha</h3>
+      처음에는 ccp알파를 이용해서 해보았다.<br/><br/>
+      <img src={Img7} class="code"/><br/><br/>
+      cost_complexity_pruning_path를 이용하면 inpurity와 ccp_alpha를 구할 수 있다. 여기서 ccp_alpha는 pruning하는 과정에서 cost함수의 &alpha;를 의미한다.<br/><br/>
+      비교는 class에 weight를 주어 비교를 해보았다. 가지를 뻗어가는 과정에서는 비중을 주어 비교해보고, pruning과정에서는 ccp_alpha의 변화를 주어 비교해 보았다.<br/><br/>
+      <img src={Img8} class="code"/><br/><br/>
+      ccp_alpha의 경우 사용자가 직접 설정을 해주면서 찾아봐야하는데, 그래프를 볼때 0.0002740688정도가 가장 적합했다.<br/><br/>
+      그리고 class에 weight 부여했을 때 거의 모든 경우에서 정확도가 높게 나왔다.<br/><br/>
+      <h3>max_leaf_nodes</h3>
+      이번에는 리프노드에 제한을 주어서 비교를 해보았다. 코드는 아래와 같다.<br/><br/>
+      <img src={Img9} class="code"/><br/><br/>
+      코드를 보면 알겠지만, DT의 리프노드를 구한뒤에 제한을 10개부터 기본 DT의 리프노드 갯수까지 10개씩 늘려가면서 비교를하게된다.<br/><br/>
+      추가로 weight를 비교해본다.<br/><br/>
+      <img src={Img10} class="code"/><br/><br/>
+      리프노드의 경우는 갯수가 어느정도 올라가면 큰 차이를 보이지 못한다. weight는 초반에는 차이가 있지만 나중에가면 거의 차이가 없는것을 볼 수 있다.<br/><br/>
+      class_weight를 설정한게 더 정확도가 낮게나오다가 리프노드가 많아지면 점차 비슷해지거나 더 높게 나오는 것을 알 수있다.<br/><br/>
+      <h3>max_depth</h3>
+      이번에는 깊이를 비교하면서 해보았다.<br/><br/>
+      <img src={Img12} class="code"/><br/><br/>
+
+      <img src={Img11} class="code"/><br/><br/>
+      깊이가 깊어질수록 정확도는 올라가며 적정수준이 되면 큰 변화가 없는 것을 확인할 수 있었고, 동시에 weight도 초반에만 영향을 주고 거의 영향이 없는것을 볼 수 있었다.<br/><br/>
+      이상 포스팅 끝
       </h4>
       </div>
     );
