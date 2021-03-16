@@ -61,7 +61,8 @@ class Posting3 extends Component{
 
       <img src={Img11} class="code"/><br/><br/>
       깊이가 깊어질수록 정확도는 올라가며 적정수준이 되면 큰 변화가 없는 것을 확인할 수 있었고, 동시에 weight도 초반에만 영향을 주고 거의 영향이 없는것을 볼 수 있었다.<br/><br/>
-      이상 포스팅 끝
+      이상 포스팅 끝<br/><br/>
+      <a href="https://github.com/jae-yong-2/ML_STUDY/blob/main/DT.ipynb">github</a>
       </h4>
       </div>
     );

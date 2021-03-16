@@ -34,7 +34,9 @@ class Posting2 extends Component{
       아래는 정규화를 했을때이다. 확실히 많이 개선된 모습을 보이니 참고하자. 각각 R^2와 예측정확도이다.<br/><br/>
       <img src={Img10}className="code"/><br/><br/>
       <img src={Img11}className="code"/><br/><br/>
-      이상 포스팅 끝
+      이상 포스팅 끝<br/><br/>
+      <a href="https://github.com/jae-yong-2/ML_STUDY/blob/main/kNN.ipynb">github</a>
+
       </h4>
       </div>
     );
