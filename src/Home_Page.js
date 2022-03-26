@@ -15,11 +15,10 @@ class Home_Page extends Component{
       return (
         <div className="Home_Page">
           <p className="body">
-            <br/>이 블로그는 컴퓨터공부를 기록 위해 만들었고 리액트만으로 만들어졌습니다.
-            <br/>리액트도 조금은 공부하기 위해 페이지 이동없이 블로그를 구현할 계획입니다.
-            <br/>공부했던 내용은 posting항목에서 확인 가능합니다.
-            <br/>아래는 리액트 공부내용을 시각적으로 보여주며 My_Study와 함께 웹공부를 할 것 입니다.
-            <br/>Link를 가시면 저의 기본 정보를 보실 수 있습니다.
+            <br/>충남대학교 컴퓨터공학과에 재학중인 이재용입니다.
+            <br/>현재 개발자의 꿈을 가졌으며, 그것을 이루기 위해 조금씩 발전하는 모습을 이 블로그를 통해 담을 예정입니다.
+            <br/>
+            <br/>방슐랭가이드라는 스타트업 개발팀에서 프론트 팀장을 맡고 있으며 아래 링크에서 실제 제가 참여한 앱을 보실 수 있습니다.
             <br/>
             <input className='title_box' id='제목' placeholder="제목"/><br/>
             <div className='content_box' contentEditable="true" id='content' placeholder="content"></div>
